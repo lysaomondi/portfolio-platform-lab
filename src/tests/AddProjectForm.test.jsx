@@ -6,7 +6,7 @@ test("should call addProject when form is submitted with valid data", async () =
     const user = userEvent.setup();
     const mockAddProject = jest.fn();
 
-    render (<AddProjectForm addProject={mockAddProject} />);
+    render (< AddProjectForm addProject={mockAddProject} />);
 
     await user.type(screen.getByLabelText(/title/i), "My Project");
 

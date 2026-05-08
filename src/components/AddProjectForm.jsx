@@ -15,7 +15,7 @@ export default function AddProjectForm({addProject}) {
       id: crypto.randomUUID(), //special identifier
       title,
       description,
-      image: "https://picsum.photos/80?random=${Math.random()",
+      image: "https://via.placeholder.com/80",
     };
      addProject(newProject);
 
